@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} View all Items {% endblock %}
+
+{% block body %}
+
+    {% for item in items %}
+        <form>
+                <button type="submit" formaction = "/remove_item" name="remove_id" value="{{ item.item_id }}">Remove</button>
+                <button type="submit" formaction = "/edit_item" name="edit_id" value="{{ item.item_id }}">Edit</button>
+                {{ item }}<br>
+        </form>
+    {% endfor %}
+
+{% endblock %}

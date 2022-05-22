@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %} Create Item{% endblock %}
+
+
+{% block body %}
+
+<div class="flex_container">
+    <div>
+        <h2>Create an Item</h2>
+    </div>
+
+    <div id = "create_item">
+        <div class="form-group">
+            <form method="POST" action="/create_item">
+                <label for="sku">SKU: </label>
+                <input type="number" class="form-control" name="sku"><br>
+
+                <label for="name">Name: </label>
+                <input type="text" class="form-control" name="name"><br>
+
+                <label for="department">Department: </label>
+                <input type="text" class="form-control" name="department"><br>
+
+                <label for="quantity">Quantity: </label>
+                <input type="number" class="form-control" name="quantity"><br>
+
+                <label for="unit_price">Unit Price: </label>
+                <input type="number" step="0.01" class="form-control" name="unit_price"><br>
+
+                <label for="description">Description: </label>
+                <input type="text" class="form-control" name="description"><br>
+
+                <input type="submit" value="Create Item">
+            </form>
+        </div>
+    </div>    
+  </div>
+
+{% endblock %}
+
+

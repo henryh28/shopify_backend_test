@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} Inventory Management {% endblock %}
+
+
+{% block body %}
+
+
+<div class = "flex_container">
+    <div class="col-md-4">
+        <h1>Inventory Management v.01</h1>
+    </div>
+
+    <div class = "vertical_flex col-md-6">
+        <h2>User Guide:</h2>
+        <li>Home button: Takes you back to this page</li>
+        <li>Create Warehouse Button: Loads form to create Warehouse locations</li>
+        <li>Create Item Button: Loads form to create an inventory item</li>
+        <li>Loads page listing all inventory in database system.</li>
+            <ul>Remove Button: Deletes this item from the database</ul>
+            <ul>Edit Button: Lets you edit the attribute of the item, including the warehouse location</ul>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} Create Warehouse{% endblock %}
+
+
+{% block body %}
+
+<div class="flex_container">
+    <div>
+        <h2>Create a Warehouse</h2>
+    </div>
+
+    <div id = "create_warehouse">
+        <div class="form-group">
+            <form method="POST" action="/create_warehouse">
+                <label for="description">Address: </label>
+                <input type="text" class="form-control" name="address"><br>
+
+                <label for="max_capacity">Max Capacity: </label>
+                <input type="text" class="form-control" name="max_capacity"><br>
+
+                <label for="description">Description: </label>
+                <input type="text" class="form-control" name="description"><br>
+
+                <input type="submit" value="Create Warehouse">
+            </form>
+        </div>
+    </div>    
+  </div>
+
+{% endblock %}
+
+
